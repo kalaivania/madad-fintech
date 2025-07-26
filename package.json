@@ -1,0 +1,17 @@
+{
+  "name": "madad-fintech",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "test": "cd client && npm test"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}

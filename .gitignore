@@ -1,0 +1,48 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+node_modules/
+*/node_modules/
+client/node_modules/
+server/node_modules/
+
+# production builds
+/build
+client/build/
+server/build/
+
+# runtime data (JSON files not needed with MongoDB)
+server/data/
+!server/data/default-lenders.json
+server/uploads/
+*.log
+logs/
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# test files (temporary)
+test-*.js
+debug-*.js
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# typescript
+*.tsbuildinfo

@@ -1,0 +1,33 @@
+{
+  "name": "madad-fintech-server",
+  "version": "1.0.0",
+  "description": "Node.js API server for MSME Invoice Discounting Platform",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index-mongo.js",
+    "dev": "nodemon index-mongo.js",
+    "start:json": "node index.js",
+    "dev:json": "nodemon index.js",
+    "migrate": "node migrate-to-mongo.js",
+    "test:mongo": "node test-mongo.js",
+    "backup-defaults": "node manage-default-lenders.js backup",
+    "restore-defaults": "node manage-default-lenders.js restore",
+    "validate-defaults": "node manage-default-lenders.js validate"
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^4.18.2",
+    "helmet": "^7.1.0",
+    "jszip": "^3.10.1",
+    "mongodb": "^6.18.0",
+    "mongoose": "^8.16.5",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
